@@ -11,8 +11,8 @@ from vosk import SetLogLevel
 
 SetLogLevel(-1)
 
-char = 'SMHUoxnSFncB3yPJiHurU38dDy5YrV3SSu4eSCV5HZ4'
-client = aiocai.Client('1d0490cffda6d743028205304b18bd19fe0fa627')
+char = "" # Character ID: ex. "https://character.ai/chat/<THIS PART>"
+client = aiocai.Client("") # Your C.AI token (getter is in development)
 
 model = Model(model_name="vosk-model-tts-ru-0.7-multi")
 synth = Synth(model)
@@ -41,5 +41,3 @@ async def main():
 
 
 asyncio.run(main())
-
-# 1d0490cffda6d743028205304b18bd19fe0fa627
